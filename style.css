@@ -1,0 +1,368 @@
+  .header {
+    padding: 80px;
+    text-align: center;
+    background-position: 30%;
+    background-attachment: scroll;
+    background-image: url(images/header.jpg);
+    color: white;
+  }
+
+  h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 72px;
+    opacity: 95%;
+  }
+  
+  h2 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1% 20%;
+  }
+  
+  h3 {
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1% 20%;
+  }
+
+  p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0% 20%;
+    color: rgb(39, 39, 39);
+  }
+
+  a :hover{
+    color: aquas;
+    text-decoration: none;
+    text-emphasis: bold;
+  }
+
+  body{
+    background-size: cover;
+
+
+  }
+
+  .footer {
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: auto;
+    height: 2.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5% 20% 5% 20%;
+    background-color: bisque;
+  }  
+
+  footer a:hover{
+    color: brown;
+  }
+
+table{
+  position:relative;
+  margin-left:auto;
+  margin-right: auto;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width:80%;
+  border: 1px solid;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+tr,td{
+  border-collapse: collapse;
+  border: 1px solid;
+  text-align: center;
+  padding: 1em;
+}
+
+th{
+  background-color: rgb(187, 165, 92);
+  color:white;
+  text-align: center;
+  padding: 1em;
+}
+
+#page {
+  position: relative;
+  min-height: 100vh;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contentwrap {
+  padding-bottom: 2.5rem;
+}
+
+/* animal fact page stuff */
+
+.container{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.flex-container{
+  padding: 15px;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.fact-image{
+  width: 100px;
+  height: auto;
+  flex-basis: 30%;
+  display: border-box;
+  object-fit: cover;
+}
+
+.fact-text{
+  justify-content: center;
+  height: auto;
+  width: calc( (80% / 3) *2 - 20px );
+  padding: 10px;
+  background-color: rgb(214, 193, 165);
+}
+.fact-text p, .fact-text h2, .fact-text li{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.fact-text h2{
+  text-align: center;
+  font-size: 35px;
+  padding: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.fact-text h3{
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 24px;
+  font-style: italic;
+  padding: 2px;
+  color: #333;
+}
+
+.fact-text p{
+  font-size: 24px;
+  padding: 10px;
+}
+
+
+/* animal selection menu */
+.animalmenu{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+
+.animalitem{
+  margin: 20px;
+  height: auto;
+  width: calc( (80% / 3) - 20px );
+  padding: 10px;
+  background-color: rgb(214, 193, 165);
+}
+
+.animalitem h2{
+  text-align: center;
+  padding: 5px;
+}
+
+.animalitem img{
+  width: 100%;
+  height: auto;
+  object-fit:contain;
+  transition: all .3s ease-in-out;
+}
+
+.animalitem:hover{
+  transform: scale(1.1);
+}
+
+  /* Navigation Menu */
+
+/* Navbar container */
+.top-links {
+  position:sticky;
+  align-items: center;
+  justify-content: center;
+  height: 5em;
+  background-color: #333;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+/* Links inside the navbar */
+.top-links a, .dropbtn {
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  width: calc( (80% / 4) - 20px);
+  font-size: 32px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:white;
+  text-align: center;
+  text-decoration: none;
+}
+.top-links a:hover, .dropbtn:hover{
+  background-color: rgb(94, 94, 94);
+}
+
+/* The dropdown container */
+.dropdown {
+  text-align: center;
+  float: left;
+  padding: 10px;
+  width: calc( (80% / 4) - 20px);
+  font-size: 32px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:white;
+  text-align: center;
+  overflow: hidden;
+
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position:absolute;
+  background-color: #f9f9f9;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-shadow: 0px 16px 24px 0px rgba(0,0,0,0.4);
+  width: calc( (80% / 4) - 20px);
+  z-index: 20;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  align-self: center;
+  height: auto;
+  width: 75%;
+  padding: 10px;
+  color: black;
+}
+
+/* Dropdown Hover Link reactions */
+.dropdown-content a:hover {
+  color: rgb(255, 255, 255);
+  border: 1px greenyellow;
+  text-emphasis: bold;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content, .dropdown-content:hover{
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+/* Form content stuff */
+section{
+  align-content: center;
+  justify-content: center;
+}
+
+form {
+  padding: 5px;
+  align-content:center;
+  justify-content: center;
+  }
+  
+  form label{
+    display: block;
+    padding-bottom: 5px;
+  }
+  
+  form input, form select{
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+  }
+
+  .sighting-time{
+    display: inline-block;
+  }
+  #day, #night{
+    overflow: auto;
+  }
+  #ignore{
+    display: block;
+  }
+
+
+/* Style the search field */
+form.animalsearch input[type=text] {
+  padding: 10px;
+  margin-left: calc(100% / 7);
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 60%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.animalsearch button {
+  float: left;
+  width: 10%;
+  padding: 10px;
+  background: #a07339;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.animalsearch button:hover {
+  background: #ff9419;
+}
+
+form.animalsearch button::before{
+  display: none;
+}
+/* Clear floats */
+form.animalsearch::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+@media screen and (min-width: 40em) {
+  #page {
+    max-width: 50em;
+  }
+  .animalmenu{
+    flex-flow: column wrap;
+    align-items: center;
+  }
+  .animalitem{
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  #page {
+    max-width: 75em;
+  }
+  .animalmenu{
+    flex-flow: row wrap;
+  }
+  .animalitem{
+    width: calc( (80% / 3) - 20px );
+  }
+}
+
